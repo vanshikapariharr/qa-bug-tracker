@@ -1,42 +1,25 @@
-#  QA Bug Tracker
+QA Bug Tracker
 
-A professional dark-themed bug tracking app built with React, React Router, and Context API. Built as a portfolio project for SDET/QA engineer roles.
+A multi-page bug tracking application designed to manage and track issues through a complete lifecycle with integrated end-to-end testing.
 
-## Tech Stack
-
-- **React 18** + **Vite**
-- **React Router v6** — multi-page navigation
-- **Context API + useReducer** — global state management
-- **localStorage** — data persistence across sessions
-- **Cypress** — 20 E2E tests covering real user flows
-
-## Features
-
-- 📋 List all bugs with status/priority badges
-- 🔍 Search + filter by status, priority
-- ➕ Create bugs with full form validation
-- ✏️ Edit existing bugs
-- 🗑️ Delete bugs with confirmation
-- 📊 Live stats strip (total, open, in-progress, critical)
-- 💾 Persists data in localStorage
-
-## Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
-## Running Tests
-
-```bash
-# Open Cypress GUI
-npm run cypress:open
-
-# Run headless
-npm run cypress:run
-```
-
-## Deploy to Netlify
-
-Push to GitHub, connect repo in Netlify. The `netlify.toml` handles SPA routing automatically.
+🚀 Features
+Create, update, and delete bugs (CRUD)
+Status lifecycle: Open → In Progress → Resolved
+Form validation and error handling
+Filter bugs by status
+Persistent data using localStorage
+Global state management with React Context API
+🧪 Testing (Cypress)
+15+ end-to-end test cases
+Covers:
+Navigation
+Form submission
+Validation errors
+Filtering functionality
+Status updates
+🛠 Tech Stack
+React.js
+JavaScript (ES6+)
+CSS
+Cypress (E2E Testing)
+LocalStorage
