@@ -1,0 +1,104 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-size: 0.875rem;
+}
+
+.breadcrumb-link {
+  color: var(--text-secondary);
+  transition: color 0.15s;
+}
+.breadcrumb-link:hover { color: var(--text-primary); }
+
+.breadcrumb-sep { color: var(--text-muted); }
+.breadcrumb-current { color: var(--text-muted); }
+
+.bug-detail-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-md);
+}
+
+.bug-detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.bug-detail-badges { display: flex; gap: 8px; }
+.bug-detail-actions { display: flex; gap: 8px; }
+
+.bug-detail-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0;
+}
+
+.bug-detail-body {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 40px;
+  margin-top: 24px;
+}
+
+@media (max-width: 720px) {
+  .bug-detail-body { grid-template-columns: 1fr; }
+  .bug-detail-card { padding: 20px; }
+}
+
+.detail-section-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-bottom: 10px;
+}
+
+.bug-detail-description {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 0.9rem;
+}
+
+/* Sidebar */
+.bug-detail-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.sidebar-value {
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.sidebar-assignee {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
