@@ -1,4 +1,4 @@
-# 🐛 QA Bug Tracker
+#  QA Bug Tracker
 
 A professional dark-themed bug tracking app built with React, React Router, and Context API. Built as a portfolio project for SDET/QA engineer roles.
 
